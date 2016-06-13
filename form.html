@@ -8,25 +8,30 @@
 <!--background="image/img_987409.jpg"-->
 <!--style="background: url('image/img_987409.jpg')"-->
 <body>
-<form action="">
-    <input name="username" placeholder="USERNAME"><br>
+<form action="" method="post">
+    <input type="hidden" name="action" value="value...">
+    <input name="username" placeholder="USERNAME"  maxlength="30" size="100"><br>
     <input type="password" name="password"><br>
-    <input type="radio" name="gender" value="male" checked="checked">male
+    <input type="radio" name="gender" value="male" checked="checked" disabled="disabled">male
     <input type="radio" name="gender" value="female">female
     <br>
-    <input type="checkbox" name="hobby" value="h1">h1
+    <input type="checkbox" name="hobby" value="h1" disabled="disabled">h1
     <input type="checkbox" name="hobby" value="h2">h2
     <input type="checkbox" name="hobby" value="h3">h3
     <input type="checkbox" name="hobby" value="h4" checked="checked">h4
     <br>
     <input type="file" name="file">
     <br>
-    <input type="button" value="test">
+    <input type="button" value="test" disabled="disabled">
     <br>
-    <select name="city">
+    <select name="city" multiple="multiple" size="2">
         <option value="beijing">beijing</option>
         <option value="shanghai" selected="selected">shanghai</option>
+        <option value="guangzhou">guangzhou</option>
+        <option value="shenzhen">shenzhen</option>
     </select>
+    <br>
+    <textarea name="intro" style="min-width: 500px; min-height: 200px;max-width: 500px; max-height: 200px;"></textarea>
     <br>
     <input type="submit" value="SUBMIT">
 </form>
